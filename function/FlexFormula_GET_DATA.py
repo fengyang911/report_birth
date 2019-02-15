@@ -9,4 +9,4 @@ class DynamicGetData(BaseFormulaObject):
         if day > last_day:
             return ""
         else:
-            return data
+            return int(data)
