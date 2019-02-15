@@ -1,0 +1,163 @@
+{
+  "is_publish": true,
+  "category_id": 3,
+  "name": "生日报表统计",
+  "description": "三代报表统计生日",
+  "headerLine": 4,
+  "number": "birth_count_report",
+  "filter": [{
+    "component": "hc-selector-depart",
+    "options": {
+      "default": true,
+      "singleLine": true,
+      "required": true,
+      "role": "manager"
+    },
+    "key": "CURRENT_DEPARTMENT",
+    "label": "部门名称"
+  }, {
+    "component": "hc-input-datetime",
+    "options": {
+      "default": true,
+      "inputLock": true,
+      "required": true,
+      "singleLine": true,
+      "format": "yyyy-MM-dd"
+    },
+    "key": "CURRENT_DATE",
+    "label": "当前日期"
+  }],
+  "data": {
+    "emp_group": {
+      "source": "EMP_GROUP()",
+      "childs": {
+        "day_30": {
+          "source": "EMP_BIRTH_COUNT(CURRENT_DEPARTMENT,'30')",
+          "index_id": "id"
+        },
+        "day_31": {
+          "source": "EMP_BIRTH_COUNT(CURRENT_DEPARTMENT,'31')",
+          "index_id": "id"
+        },
+        "day_18": {
+          "source": "EMP_BIRTH_COUNT(CURRENT_DEPARTMENT,'18')",
+          "index_id": "id"
+        },
+        "day_19": {
+          "source": "EMP_BIRTH_COUNT(CURRENT_DEPARTMENT,'19')",
+          "index_id": "id"
+        },
+        "day_14": {
+          "source": "EMP_BIRTH_COUNT(CURRENT_DEPARTMENT,'14')",
+          "index_id": "id"
+        },
+        "day_15": {
+          "source": "EMP_BIRTH_COUNT(CURRENT_DEPARTMENT,'15')",
+          "index_id": "id"
+        },
+        "day_16": {
+          "source": "EMP_BIRTH_COUNT(CURRENT_DEPARTMENT,'16')",
+          "index_id": "id"
+        },
+        "day_17": {
+          "source": "EMP_BIRTH_COUNT(CURRENT_DEPARTMENT,'17')",
+          "index_id": "id"
+        },
+        "day_10": {
+          "source": "EMP_BIRTH_COUNT(CURRENT_DEPARTMENT,'10')",
+          "index_id": "id"
+        },
+        "day_11": {
+          "source": "EMP_BIRTH_COUNT(CURRENT_DEPARTMENT,'11')",
+          "index_id": "id"
+        },
+        "day_12": {
+          "source": "EMP_BIRTH_COUNT(CURRENT_DEPARTMENT,'12')",
+          "index_id": "id"
+        },
+        "day_13": {
+          "source": "EMP_BIRTH_COUNT(CURRENT_DEPARTMENT,'13')",
+          "index_id": "id"
+        },
+        "day_22": {
+          "source": "EMP_BIRTH_COUNT(CURRENT_DEPARTMENT,'22')",
+          "index_id": "id"
+        },
+        "day_29": {
+          "source": "EMP_BIRTH_COUNT(CURRENT_DEPARTMENT,'29')",
+          "index_id": "id"
+        },
+        "day_28": {
+          "source": "EMP_BIRTH_COUNT(CURRENT_DEPARTMENT,'28')",
+          "index_id": "id"
+        },
+        "day_21": {
+          "source": "EMP_BIRTH_COUNT(CURRENT_DEPARTMENT,'21')",
+          "index_id": "id"
+        },
+        "day_20": {
+          "source": "EMP_BIRTH_COUNT(CURRENT_DEPARTMENT,'20')",
+          "index_id": "id"
+        },
+        "day_09": {
+          "source": "EMP_BIRTH_COUNT(CURRENT_DEPARTMENT,'09')",
+          "index_id": "id"
+        },
+        "day_08": {
+          "source": "EMP_BIRTH_COUNT(CURRENT_DEPARTMENT,'08')",
+          "index_id": "id"
+        },
+        "day_25": {
+          "source": "EMP_BIRTH_COUNT(CURRENT_DEPARTMENT,'25')",
+          "index_id": "id"
+        },
+        "day_24": {
+          "source": "EMP_BIRTH_COUNT(CURRENT_DEPARTMENT,'24')",
+          "index_id": "id"
+        },
+        "day_27": {
+          "source": "EMP_BIRTH_COUNT(CURRENT_DEPARTMENT,'27')",
+          "index_id": "id"
+        },
+        "day_26": {
+          "source": "EMP_BIRTH_COUNT(CURRENT_DEPARTMENT,'26')",
+          "index_id": "id"
+        },
+        "day_03": {
+          "source": "EMP_BIRTH_COUNT(CURRENT_DEPARTMENT,'03')",
+          "index_id": "id"
+        },
+        "day_02": {
+          "source": "EMP_BIRTH_COUNT(CURRENT_DEPARTMENT,'02')",
+          "index_id": "id"
+        },
+        "day_01": {
+          "source": "EMP_BIRTH_COUNT(CURRENT_DEPARTMENT,'01')",
+          "index_id": "id"
+        },
+        "day_07": {
+          "source": "EMP_BIRTH_COUNT(CURRENT_DEPARTMENT,'07')",
+          "index_id": "id"
+        },
+        "day_06": {
+          "source": "EMP_BIRTH_COUNT(CURRENT_DEPARTMENT,'06')",
+          "index_id": "id"
+        },
+        "day_05": {
+          "source": "EMP_BIRTH_COUNT(CURRENT_DEPARTMENT,'05')",
+          "index_id": "id"
+        },
+        "day_04": {
+          "source": "EMP_BIRTH_COUNT(CURRENT_DEPARTMENT,'04')",
+          "index_id": "id"
+        },
+        "day_23": {
+          "source": "EMP_BIRTH_COUNT(CURRENT_DEPARTMENT,'23')",
+          "index_id": "id"
+        }
+      },
+      "index_id": "id"
+    }
+  },
+  "headerLine": 4
+}
