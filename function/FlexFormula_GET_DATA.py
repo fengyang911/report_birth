@@ -1,6 +1,3 @@
-# -*- coding: utf-8 -*-
-__author__ = "fengyang"
-
 class DynamicGetData(BaseFormulaObject):
     def do(self, day, data):
         current_date = self.context.get('CURRENT_DATE')

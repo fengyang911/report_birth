@@ -1,6 +1,3 @@
-# -*- coding: utf-8 -*-
-__author__ = "fengyang"
-
 class DynamicGetDate(BaseFormulaObject):
     def do(self, day):
         year_month_list = self.context.get('CURRENT_DATE')
