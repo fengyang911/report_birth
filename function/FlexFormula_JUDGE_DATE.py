@@ -1,4 +1,5 @@
 class DynamicGetDate(BaseFormulaObject):
+    """判断当前时间是否存在"""
     def do(self, day):
         year_month_list = self.context.get('CURRENT_DATE')
         year = year_month_list.split("-")[0]
